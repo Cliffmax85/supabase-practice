@@ -32,5 +32,13 @@ export function renderMovie(movie) {
     const bestPictureEl = document.createElement('p');
 
     div.classList.add('movie-item');
-    
+
+    titleEl.textContent = 'title: ' + movie.title;
+    lengthEl.textContent = 'length: ' + movie.length;
+    genreEl.textContent = 'genre: ' + movie.genre;
+    bestPictureEl.textContent = 'best picture: ' + movie.bestPicture;
+
+    div.append(titleEl, lengthEl, genreEl, bestPictureEl);
+    return div;
+
 }
