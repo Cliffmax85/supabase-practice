@@ -19,3 +19,18 @@ export async function getMovies() {
         .select();
     return response.data;
 }
+
+export async function getBands() {
+    const response = await client 
+        .from('bands')
+        .select();
+    return response.data;
+}
+
+export async function getBirds() {
+    const response = await client 
+        .from('birds')
+        .select();
+        
+    return response.data;
+}
